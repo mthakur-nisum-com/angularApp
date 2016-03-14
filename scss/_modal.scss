@@ -1,0 +1,125 @@
+@font-face {
+    font-family: "OpenSans-Regular" ;
+    src: url("fonts/OpenSans-Regular.ttf");
+}
+.retrival-overlay,
+.limitExceed-overlay,
+.update-overlay,
+.selectionmsg-overlay,
+.success-overlay,
+.configLoad-overlay,
+.configUpdate-overlay,
+.previewErrormsg-overlay,
+.submissionSuccess-overlay,
+.selectAll-overlay {
+    top: 200px;
+}
+
+.retrival-overlay > .modal-dialog,
+.limitExceed-overlay > .modal-dialog,
+.update-overlay > .modal-dialog,
+.selectionmsg-overlay > .modal-dialog,
+.success-overlay > .modal-dialog,
+.configLoad-overlay>.modal-dialog,
+.configUpdate-overlay>.modal-dialog,
+.previewErrormsg-overlay>.modal-dialog,
+.submissionSuccess-overlay> .modal-dialog
+{
+    width: 350px;
+    border-radius: 10px;
+}
+.selectAll-overlay>.modal-dialog{
+width:400px;
+  border-radius: 10px;
+
+}
+.addtional-msg{
+color:red;
+font-weight:bold;
+}
+.preview-overlay > .modal-dialog {
+    width: auto;
+    margin: 50px 100px 0px 100px;
+}
+
+.preview-overlay {
+    .preview-section {
+        padding: 10px 20px 10px 20px;
+		h2{
+		text-align:center;
+		color:#0073b0;
+		}
+        .list-view-header {
+            background-color: #717d89;
+        }
+        .previewTable {
+            thead {
+                margin-right: 32px;
+                th {
+                    color: #ffffff;
+                }
+            }
+            tbody>tr:nth-of-type(odd) {
+                background-color: #e6ebef;
+            }
+        }
+		 .pages-per-page {
+        height: 26px;
+        line-height: 0px;
+        color: white;
+        background: #0073b0;
+    }
+    .pages-menu {
+        min-width: 0px;
+    }
+        ::-webkit-scrollbar {
+            width: 15px
+        }
+        ::-webkit-scrollbar-track {
+            -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+            background-color: #0073b0;
+            height: 50px;
+        }
+        .button-wrapper {
+            text-align: center;
+            .okbtn,
+            .cancelbtn {
+                font-size: 15px;
+                font-weight: bold;
+                margin-right: 20px;
+            }
+        }
+    }
+}
+
+.modal-content {
+    background-color: ghostwhite;
+	font-size: 14px;
+	.content-section{
+	 padding-top:20px;
+	}
+
+    .close-overlay {
+        float: right;
+        margin: 2px;
+        cursor: pointer;
+		
+    }
+    .okbtn {
+        background-color: #0073b0;
+        color: white;
+        font-weight: bold;
+        font-size: 12px;
+    }
+    .cancelbtn {
+        background-color: #d6dde3;
+        color: black;
+        font-weight: bold;
+        font-size: 12px;
+    }
+}

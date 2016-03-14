@@ -1,0 +1,33 @@
+.categories-section {
+  background-color: white;
+    margin-top: 0px;
+    padding: 30px 0px 0px 0px;
+    border: 1px solid #389bd0;
+    .categories-list{
+        margin-left:84px;
+    }
+    .button-wrapper {
+        text-align: center;
+        margin-left:-28px;
+        #categoriesFormSubmit {
+            background-color: #0073b0;
+            span {
+                font-size: 15px;
+                padding: 6px;
+                color: white;
+            }
+        }
+    }
+    ::-webkit-input-placeholder {
+        color: #DCDCDC;
+    }
+    :-moz-placeholder {
+        color: #DCDCDC;
+    }
+    ::-moz-placeholder {
+        color: #DCDCDC;
+    }
+    :-ms-input-placeholder {
+        color: #DCDCDC;
+    }
+}

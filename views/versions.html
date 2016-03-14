@@ -1,0 +1,41 @@
+<title>Troux-B|DNA Integration-Products</title>
+
+    <div id="breadCrumb">
+        <ul class="bread-crumb-nav nav nav-pills" role="tablist">
+            <li class="manufacturers disable">
+                <a ui-sref="root.manufacturersurl"> Manufacturers</a>
+            </li>
+            <li class="categories disable">
+                <a ui-sref="root.categories"> Categories</a>
+            </li>
+            <li class="products active">
+                <a ui-sref="root.productList"> Products/{{VersionsOrModels}}</a>
+            </li>
+        </ul>
+    </div>
+    <form name="versions-selection" id="versionsSelectionForm" ng-submit="versionsCtrl.save()">
+        <div class=" versionslist">
+            <div class="list-view">
+                <table id="availableVersionsGrid" bs-table-control="availableVersionsGrid"></table>
+            </div>
+            <button class="btn btn-addItems download-button" type="button" ng-click="addItems()">
+                <span>Add Selected Items</span>
+            </button>
+            <div class="selected-products">
+                <label>{{labelForSelectedGrid}}</label>
+            </div>
+            <div class="list-view">
+                <table id="selectedVersionsGrid" bs-table-control="selectedVersionsGrid"></table>
+            </div>
+            <div class="row ">
+                <div class="button-wrapper">
+                    <a class="previous btn" ui-sref="root.productList"><span class="glyphicon glyphicon-backward"></span> Products </a>
+                    <button class="btn submit" id="productsFormSubmit">
+                        <span>Save</span>
+                        <span class="glyphicon glyphicon-forward"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </form>
+

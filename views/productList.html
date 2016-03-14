@@ -1,0 +1,45 @@
+<title>Troux-B|DNA Integration-Products</title>
+
+    <div id="breadCrumb">
+        <ul class="bread-crumb-nav nav nav-pills" role="tablist">
+            <li class="manufacturers disable">
+                <a ui-sref="root.manufacturersurl"> Manufacturers</a>
+            </li>
+            <li class="categories disable">
+                <a ui-sref="root.categories"> Categories</a>
+            </li>
+            <li class="products active">
+                <a ui-sref="root.productList"> Products/{{VersionsOrModels}}</a>
+            </li>
+        </ul>
+    </div>
+    <form name="products-selection" id="productsSelectionForm" ng-submit="productListCtrl.save()">
+        <div class="productlist">
+            <div class="product-type-heading">
+                <span class="product-type">Select Product Type:  </span>
+                <input type="radio" ng-model="productType" value="Softwares" ng-change='productsData(productType)'>Software
+                <input type="radio" ng-model="productType" value="Hardwares" ng-change='productsData(productType)'>Hardware
+            </div>
+            <div class="list-view">
+                <table id="avaliableProductsGrid" bs-table-control="availableProductsGrid"></table>
+            </div>
+            <button class="btn btn-addItems download-button" type="button" ng-click="addItems()">
+                <span>Add Selected Items</span>
+            </button>
+            <div class="selected-products">
+                <label>Selected Products(TROUX)</label>
+            </div>
+            <div class="list-view">
+                <table id="selectedProductsGrid" bs-table-control="selectedProductsGrid"></table>
+            </div>
+            <div class="row ">
+                <div class="col-md-12 button-wrapper">
+                    <button class="btn submit" id="productsFormSubmit">
+                        <span>{{VersionsOrModels}}</span>
+						 <span class="glyphicon glyphicon-forward"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </form>
+

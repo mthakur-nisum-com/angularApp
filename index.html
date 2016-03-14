@@ -1,0 +1,27 @@
+<html>
+
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="cache-control" content="max-age=1" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/bootstrap-table.css" />
+</head>
+
+
+<body>
+<div  id="loaderContainer"  class="my-loading-spinner-container" style="display:none;">
+    <div id="ajaxLoader"></div>
+</div>
+    <header ui-view="header" class="home" id="appHeader"></header>
+    <section class="content-section container">
+
+            <div ui-view="content" id="appSection"></div>
+
+    </section>
+    <footer ui-view="footer" id="appFooter"></footer>
+    <script data-main="js/main" src="js/lib/min/require.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<title>Troux-B|DNA Integration-Manufacturers</title>
+
+    <div id="breadCrumb">
+        <ul class="bread-crumb-nav nav nav-pills" role="tablist">
+            <li class="manufacturers active">
+                <a ui-sref="root.manufacturersurl"> Manufacturers</a>
+            </li>
+            <li class="categories disable">
+                <a ui-sref="root.categories"> Categories</a>
+            </li>
+            <li class="products disable">
+                <a ui-sref="root.productList">Products/{{VersionsOrModels}}</a>
+            </li>
+        </ul>
+    </div>
+    <div class="manufacturer-section">
+        <div class="row">
+            <div class="col-md-11 col-md-offset-1 manufacturer-list">
+                <form name="manufacturer-selection" id="manufaturersSelectionForm" ng-submit="manufacturesCtrl.save()">
+                    <manufacturer-dual-list available-items='availableManufacturers' selected-items='selectedManufacturers' , available-items-length='availableManufacturersLength' , selected-items-length='selectedManufacturersLength' , move-all-btn="moveAllBtn"></manufacturer-dual-list>
+                    <div class="row ">
+                        <div class="col-md-12 button-wrapper">
+                            <button class="btn submit" id="manufacturerFormSubmit">
+                                <span>Save</span>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+

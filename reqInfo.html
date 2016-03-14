@@ -1,0 +1,18 @@
+<html>
+	<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<link rel="shortcut icon" href="favicon.ico" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+	    <link rel="stylesheet" href="css/main.css" />
+	    <link rel="stylesheet" href="css/bootstrap-table.css" /> 
+	</head>
+
+	<body>
+	 	<header ui-view="header" class="home" id="appHeader"></header>
+	 	<section class="content-section">
+			<div ui-view="content" id="appSection" class="container"></div>
+		</section>
+   		<footer ui-view="footer" id="appFooter"></footer>
+		<script data-main="js/main" src="js/lib/min/require.min.js"></script>	
+	</body>
+</html>

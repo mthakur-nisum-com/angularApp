@@ -1,0 +1,25 @@
+<div id="dual-list-box" class="row">
+    <div class="col-md-5">
+        <h4><span class="unselected-title">Available</span>
+               <small>- Showing <span class="unselected-count">{{availableItemsLength}}</span>
+               </small>
+              </h4>
+        <input class="filter form-control filter-unselected" type="text" ng-minlength='3' placeholder="Filter" ng-model="searchText" ng-keypress="$event.keyCode===13? keyFuntion($event):false">
+        <div class="unselectedPromptMsg">*Minimum 3 characters are required</div>
+        <select class="unselected form-control" multiple ng-model="availableSelection" ng-options="item as item.manufacture for item in availableItems  | filter:availablefilterText "></select>
+        </select>
+    </div>
+    <div class="col-md-1 center-block add-del-btns">
+        <button type="button" id="toRight" class="btn btn-default col-md-8 col-md-offset-2 str" data-type="str" ng-click="copyToRight(availableSelection, availableItems,selectedItems)"><span class="glyphicon glyphicon-chevron-right"></span></button>
+        <button type="button" id="toRemove" class="btn btn-default col-md-8 col-md-offset-2 stl" data-type="stl" ng-click="removeFromRight(selectedSelection,selectedItems,availableItems)"><span class="glyphicon glyphicon-chevron-left"></span></button>
+    </div>
+    <div class="col-md-5">
+        <h4>
+                  <span class="selected-title">Selected</span> <small>- Showing <span class="selected-count">{{selectedItemsLength}}</span>
+                  </small>
+                  </h4>
+        <input class="filter  form-control filter-selected" type="text" placeholder="Filter" ng-minlength='3' ng-model="searchSelected" ng-keypress="$event.keyCode===13? keyFuntion($event):false">
+        <div class="selectedPromptMsg">*Minimum 3 characters are required</div>
+        <select class="selected form-control" multiple ng-model="selectedSelection" ng-options="item as item.manufacture for item in selectedItems | filter:searchSelected"></select>
+    </div>
+</div>

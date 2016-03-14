@@ -1,0 +1,49 @@
+header {
+    .navbar {
+        padding-top: 5px;
+        margin-bottom:5px;
+    }
+    .navbar-default {
+        background: none !important;
+        border-color: transparent !important;
+    }
+    .troux-logo {
+        background: url("../images/trouxLogo.png") no-repeat;
+        height: 76px;
+        width: 185px;
+    }
+    ul.navbar-nav {
+        margin-top: 20px;
+        li {
+            font-size: 13px;
+            border-right: 1px solid #a6afbe;          
+        }
+        li:last-child {
+            border: none;
+        }
+        .configure {
+            padding: 10px 20px;
+             color: #333333;
+              font-weight:bold;
+			  cursor:pointer;
+        }
+        .import-normalize,
+        .import-technopedia {
+         color: #333333;
+         font-weight:bold;
+            text-align: center;
+              padding: 0 20px;
+            cursor: pointer;
+            span {
+                display: block;
+            }
+        }
+    }
+    .welcom-text {
+        text-align: right;
+        color: white;
+        background-color: #204b67;
+        width: 100%;
+        padding: 7px 0px 7px 0px;
+    }
+}

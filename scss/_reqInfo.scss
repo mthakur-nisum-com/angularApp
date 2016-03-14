@@ -1,0 +1,44 @@
+@font-face {
+    font-family: "OpenSans-Regular" ;
+    src: url("fonts/OpenSans-Regular.ttf");
+}
+.viewRequestInfo{
+	margin:40px 6px 0px 6px;
+	.list-view-header{
+		background-color:#717d89;
+	}
+	.reqInfo{
+		font-size:15px;
+		thead{
+			margin-right:32px;
+			th{
+				color:#ffffff;
+			}
+		}
+		tbody>tr:nth-of-type(odd){
+			background-color:#e6ebef;
+		}
+	}
+	.pages-per-page {
+        height: 26px;
+        line-height: 0px;
+        color: white;
+        background: #0073b0;
+    }
+    .pages-menu {
+        min-width: 0px;
+    }
+	::-webkit-scrollbar {
+        width: 15px
+    }
+    ::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+    }
+    ::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+        background-color: #0073b0;
+        height: 50px;
+    }
+}

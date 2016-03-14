@@ -1,0 +1,165 @@
+@font-face {
+    font-family: "OpenSans-Regular" ;
+    src: url("fonts/OpenSans-Regular.ttf");
+}
+#appSection {
+    margin-top: 0px;
+}
+.configuration {
+    font-size:13px;
+    margin: 30px 10px;
+    .refresh {
+        background-color: #0073b0;
+        color: white;
+        float: right;
+    }
+    .extractionNote{
+        margin-bottom:10px;
+    }
+    .errorMsg {
+        color: red;
+    }
+    .configurationList {
+        font-size:15px;
+        thead {
+            margin-right: 32px;
+            th {
+                color: #ffffff;
+            }
+        }
+        tbody>tr:nth-of-type(odd) {
+            background-color: #e6ebef;
+        }
+    }
+    .list-view-header {
+        background-color: #717d89;
+    }
+    .list-view {
+        margin-right: 32px;
+    }
+    .selectItem {
+        button {
+            color: white;
+            background-color: #0073b0;
+        }
+    }
+    .pages-per-page {
+        height: 26px;
+        line-height: 0px;
+        color: white;
+        background: #0073b0;
+    }
+    .pages-menu {
+        min-width: 0px;
+    }
+    ::-webkit-scrollbar {
+        width: 15px
+    }
+    ::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+    }
+    ::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+        background-color: #0073b0;
+        height: 50px;
+    }
+    .panel-open>.panel-heading {
+        color: white;
+        background-color: #0073b0;
+        span {
+            font-weight: bold;
+        }
+    }
+    .panel-heading {
+        color: black;
+        background-color:#F2F6F8;
+        span {
+            font-size:14px;
+            font-weight: bold;
+        }
+        a {
+            outline: 0;
+            text-decoration: none;
+        }
+
+    }
+    .service-configuration-section {
+        input[type=text],
+        input[type=url],
+        input[type=number],
+        select {
+            width: 70%;
+        }
+        .proxy-input {
+            width: 100% !important;
+        }
+        .port-label {
+            padding-right: 0px;
+        }
+        .port-input {
+            padding: 0px;
+            input[type=text] {
+                width: 63%;
+            }
+        }
+        .checkbox {
+            margin-top: 20px !important;
+            margin-bottom: 20px !important;
+            label {
+                font-weight: bold;
+            }
+        }
+		  #licenseKey{
+            display:inline;
+			width:64% !important;
+        }
+        #serviceConfigSubmit {
+            color: white;
+            background-color: #0073b0;
+            font-weight: bold;
+        }
+        .disable {
+            background-color: lightgray !important;
+        }
+    }
+   .badDates{
+		.dates{
+			button{
+				padding-top:9px;
+				padding-bottom:9px;
+			}
+		}
+		.minDtErr,.maxDtErr{
+			display:none;
+			color:red;
+		}
+		.badDatesSubmit{
+			color: white;
+    		background-color: #0073b0;
+    		font-weight:bold;
+		}
+	}
+	.emailConfig{
+		.emailSubmit{
+			color: white;
+    		background-color:#0073b0;
+    		font-weight:bold;
+		}
+	}
+	  #importToTroux{
+    .checkbox {
+            margin-top: 20px !important;
+            margin-bottom: 20px !important;
+            label {
+                font-weight: bold;
+            }
+        }
+        .importSubmit {
+            color: white;
+            background-color: #0073b0;
+            font-weight: bold;
+        }
+    }
+}

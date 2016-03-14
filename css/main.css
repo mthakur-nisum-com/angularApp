@@ -1,0 +1,1077 @@
+/* line 1, ../scss/main.scss */
+#loaderContainer {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1080;
+  background-color: white;
+  opacity: 0.8;
+  position: fixed;
+}
+
+/* line 12, ../scss/main.scss */
+#ajaxLoader {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  height: 60px;
+  width: 60px;
+  background: url("../images/ajax-loader.gif") no-repeat;
+  border-radius: 10px;
+}
+
+/* line 1, ../scss/_footer.scss */
+footer {
+  width: 100%;
+}
+/* line 3, ../scss/_footer.scss */
+footer .footer-text {
+  background-color: #204b67;
+  color: white;
+  padding: 10px 0px 10px 0px;
+  text-align: center;
+}
+
+/* line 2, ../scss/_header.scss */
+header .navbar {
+  padding-top: 5px;
+  margin-bottom: 5px;
+}
+/* line 6, ../scss/_header.scss */
+header .navbar-default {
+  background: none !important;
+  border-color: transparent !important;
+}
+/* line 10, ../scss/_header.scss */
+header .troux-logo {
+  background: url("../images/trouxLogo.png") no-repeat;
+  height: 76px;
+  width: 185px;
+}
+/* line 15, ../scss/_header.scss */
+header ul.navbar-nav {
+  margin-top: 20px;
+}
+/* line 17, ../scss/_header.scss */
+header ul.navbar-nav li {
+  font-size: 13px;
+  border-right: 1px solid #a6afbe;
+}
+/* line 21, ../scss/_header.scss */
+header ul.navbar-nav li:last-child {
+  border: none;
+}
+/* line 24, ../scss/_header.scss */
+header ul.navbar-nav .configure {
+  padding: 10px 20px;
+  color: #333333;
+  font-weight: bold;
+  cursor: pointer;
+}
+/* line 30, ../scss/_header.scss */
+header ul.navbar-nav .import-normalize,
+header ul.navbar-nav .import-technopedia {
+  color: #333333;
+  font-weight: bold;
+  text-align: center;
+  padding: 0 20px;
+  cursor: pointer;
+}
+/* line 37, ../scss/_header.scss */
+header ul.navbar-nav .import-normalize span,
+header ul.navbar-nav .import-technopedia span {
+  display: block;
+}
+/* line 42, ../scss/_header.scss */
+header .welcom-text {
+  text-align: right;
+  color: white;
+  background-color: #204b67;
+  width: 100%;
+  padding: 7px 0px 7px 0px;
+}
+
+/* line 2, ../scss/_breadcrumb.scss */
+section #breadCrumb {
+  margin: 20px 0px 0px 0px;
+  font-size: 15px;
+}
+/* line 5, ../scss/_breadcrumb.scss */
+section #breadCrumb .nav-pills > li.active > a,
+section #breadCrumb .nav-pills > li.active > a:focus,
+section #breadCrumb .nav-pills > li.active > a:hover {
+  background-color: transparent !important;
+  color: white !important;
+}
+/* line 11, ../scss/_breadcrumb.scss */
+section #breadCrumb .nav > li > a {
+  padding: 0px !important;
+  color: grey !important;
+}
+/* line 15, ../scss/_breadcrumb.scss */
+section #breadCrumb .nav > li > a:hover {
+  background-color: transparent !important;
+}
+/* line 18, ../scss/_breadcrumb.scss */
+section #breadCrumb .bread-crumb-nav {
+  list-type: none;
+  font-weight: bold;
+}
+/* line 21, ../scss/_breadcrumb.scss */
+section #breadCrumb .bread-crumb-nav li {
+  display: inline;
+  line-height: 35px;
+  color: grey;
+  opacity: 0.44;
+}
+/* line 27, ../scss/_breadcrumb.scss */
+section #breadCrumb .bread-crumb-nav li:first-child {
+  padding: 0 0 0 50px;
+}
+/* line 30, ../scss/_breadcrumb.scss */
+section #breadCrumb .bread-crumb-nav li:nth-child(2) {
+  padding: 0px 0px 0px 65px;
+}
+/* line 34, ../scss/_breadcrumb.scss */
+section #breadCrumb .bread-crumb-nav li:nth-child(3),
+section #breadCrumb .bread-crumb-nav li:last-child {
+  padding: 0px 0px 0px 40px;
+}
+/* line 39, ../scss/_breadcrumb.scss */
+section #breadCrumb .bread-crumb-nav li.active {
+  background: transparent url("../images/active-tab.png") no-repeat scroll -1px center !important;
+  color: white;
+  opacity: 1;
+  height: 35px;
+  width: 210px;
+}
+/* line 47, ../scss/_breadcrumb.scss */
+section #breadCrumb .bread-crumb-nav li.disable {
+  background: transparent url("../images/inactive-tab.png") no-repeat scroll -1px center !important;
+  color: white;
+  opacity: 1;
+  height: 35px;
+  width: 210px;
+}
+
+@font-face {
+  font-family: "OpenSans-Regular";
+  src: url("fonts/OpenSans-Regular.ttf");
+}
+/* line 6, ../scss/_manufacturers.scss */
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 14, ../scss/_manufacturers.scss */
+body {
+  background: #f2f6f8 url("../images/bg.jpg") repeat-x;
+  font-family: "OpenSans-Regular";
+}
+
+/* line 20, ../scss/_manufacturers.scss */
+section {
+  min-height: 100% !important;
+}
+/* line 23, ../scss/_manufacturers.scss */
+section #appSection .manufacturer-section {
+  background-color: white;
+  margin-top: 0px;
+  padding: 30px 0px 15px 0px;
+  border: 1px solid #389bd0;
+}
+/* line 28, ../scss/_manufacturers.scss */
+section #appSection .manufacturer-section .button-wrapper {
+  text-align: center;
+  margin-left:-28px;
+}
+
+section #appSection .manufacturer-section .manufacturer-list {
+  margin-left: 84px;
+}
+/* line 30, ../scss/_manufacturers.scss */
+section #appSection .manufacturer-section .button-wrapper #manufacturerFormSubmit {
+  background-color: #0073b0;
+}
+/* line 32, ../scss/_manufacturers.scss */
+section #appSection .manufacturer-section .button-wrapper #manufacturerFormSubmit span {
+  font-size: 15px;
+  padding: 6px;
+  color: white;
+  border: none;
+}
+/* line 40, ../scss/_manufacturers.scss */
+section #appSection .manufacturer-section ::-webkit-input-placeholder {
+  color: #DCDCDC;
+}
+/* line 43, ../scss/_manufacturers.scss */
+section #appSection .manufacturer-section :-moz-placeholder {
+  color: #DCDCDC;
+}
+/* line 46, ../scss/_manufacturers.scss */
+section #appSection .manufacturer-section ::-moz-placeholder {
+  color: #DCDCDC;
+}
+/* line 49, ../scss/_manufacturers.scss */
+section #appSection .manufacturer-section :-ms-input-placeholder {
+  color: #DCDCDC;
+}
+
+/* line 1, ../scss/_categories.scss */
+.categories-section {
+  background-color: white;
+  margin-top: 0px;
+  padding: 30px 0px 0px 0px;
+  border: 1px solid #389bd0;
+}
+.categories-section .categories-list{
+  margin-left:84px;
+}
+/* line 6, ../scss/_categories.scss */
+.categories-section .button-wrapper {
+  text-align: center;
+  margin-left:-28px;
+}
+/* line 8, ../scss/_categories.scss */
+.categories-section .button-wrapper #categoriesFormSubmit {
+  background-color: #0073b0;
+}
+/* line 10, ../scss/_categories.scss */
+.categories-section .button-wrapper #categoriesFormSubmit span {
+  font-size: 15px;
+  padding: 6px;
+  color: white;
+}
+/* line 17, ../scss/_categories.scss */
+.categories-section ::-webkit-input-placeholder {
+  color: #DCDCDC;
+}
+/* line 20, ../scss/_categories.scss */
+.categories-section :-moz-placeholder {
+  color: #DCDCDC;
+}
+/* line 23, ../scss/_categories.scss */
+.categories-section ::-moz-placeholder {
+  color: #DCDCDC;
+}
+/* line 26, ../scss/_categories.scss */
+.categories-section :-ms-input-placeholder {
+  color: #DCDCDC;
+}
+
+/* line 1, ../scss/_duallist.scss */
+#dual-list-box {
+  scrollbar-base-color: #0073b0;
+  scrollbar-base-color: #0073b0;
+  scrollbar-3dlight-color: #C0C0C0;
+  scrollbar-highlight-color: #0073b0;
+  scrollbar-track-color: #EBEBEB;
+  scrollbar-arrow-color: black;
+  scrollbar-shadow-color: #0073b0;
+  scrollbar-dark-shadow-color: #C0C0C0;
+}
+/* line 2, ../scss/_duallist.scss */
+#dual-list-box small {
+  color: grey;
+  opacity: 0.4;
+}
+/* line 6, ../scss/_duallist.scss */
+#dual-list-box .filter {
+  width: 390px;
+  margin-bottom: 10px;
+  padding: 0px 0px 0px 20px;
+}
+/* line 12, ../scss/_duallist.scss */
+#dual-list-box .unselectedPromptMsg,
+#dual-list-box .selectedPromptMsg {
+  display: none;
+  color: red;
+  margin-bottom: 8px;
+}
+/* line 18, ../scss/_duallist.scss */
+#dual-list-box .filterimg {
+  background: url("../images/loader.gif") no-repeat 260px;
+}
+/* line 21, ../scss/_duallist.scss */
+#dual-list-box .btn.disabled, #dual-list-box .btn[disabled], #dual-list-box fieldset[disabled] .btn {
+  opacity: 1;
+  cursor: pointer;
+  background-color: #a0a9b1;
+}
+#dual-list-box .add-del-btns{
+  width:13.333%;
+}
+/* line 26, ../scss/_duallist.scss */
+#dual-list-box select {
+  word-wrap: break-word;
+  width: 390px;
+  height: 300px;
+  background-color: ghostwhite;
+}
+/* line 31, ../scss/_duallist.scss */
+#dual-list-box select option {
+  padding: 0px 0px 10px 10px;
+}
+/* line 36, ../scss/_duallist.scss */
+#dual-list-box select option:hover,
+#dual-list-box select option:focus,
+#dual-list-box select option:active,
+#dual-list-box select option:checked {
+  background: linear-gradient(#0073b0, #0073b0);
+  color: white;
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  /* line 45, ../scss/_duallist.scss */
+  #dual-list-box select option:hover,
+  #dual-list-box select option:focus,
+  #dual-list-box select option:active,
+  #dual-list-box select option:checked {
+    background: #0073b0;
+    color: white;
+  }
+}
+/* line 53, ../scss/_duallist.scss */
+#dual-list-box .center-block {
+  margin-top: 180px;
+}
+/* line 55, ../scss/_duallist.scss */
+#dual-list-box .center-block button {
+  background-color: #a0a9b1;
+  margin-bottom: 10px;
+  width: 55px;
+  border: none;
+}
+/* line 61, ../scss/_duallist.scss */
+#dual-list-box .center-block .stl,
+#dual-list-box .center-block .str {
+  color: white;
+}
+/* line 66, ../scss/_duallist.scss */
+#dual-list-box ::-webkit-scrollbar {
+  width: 15px;
+}
+/* line 69, ../scss/_duallist.scss */
+#dual-list-box ::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+/* line 73, ../scss/_duallist.scss */
+#dual-list-box ::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+  background-color: #0073b0;
+  height: 50px;
+}
+
+/* line 1, ../scss/_productlist.scss */
+.productlist {
+  background-color: white;
+  padding: 30px 30px 0px 30px;
+  border: 1px solid #389bd0;
+}
+/* line 5, ../scss/_productlist.scss */
+.productlist .product-type-heading {
+  border-bottom: dashed #4bbfcc 1px;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 0 0 10px 0px;
+}
+/* line 10, ../scss/_productlist.scss */
+.productlist .product-type-heading .product-type {
+  color: #0073b0;
+}
+/* line 14, ../scss/_productlist.scss */
+.productlist .grayOut {
+  background-color: lightgray !important;
+}
+/* line 17, ../scss/_productlist.scss */
+.productlist .list-view-header {
+  background-color: #717d89;
+}
+/* line 23, ../scss/_productlist.scss */
+.productlist .ProductsAvailability thead th,
+.productlist .SelectedProducts thead th {
+  color: #ffffff;
+  font-size: 14px;
+}
+/* line 28, ../scss/_productlist.scss */
+.productlist .ProductsAvailability tbody > tr,
+.productlist .SelectedProducts tbody > tr {
+  font-size: 14px;
+}
+/* line 31, ../scss/_productlist.scss */
+.productlist .ProductsAvailability tbody > tr:nth-of-type(odd),
+.productlist .SelectedProducts tbody > tr:nth-of-type(odd) {
+  background-color: #e6ebef;
+}
+/* line 35, ../scss/_productlist.scss */
+.productlist .search-section {
+  margin-top: 20px;
+}
+/* line 37, ../scss/_productlist.scss */
+.productlist .search-section .search {
+  margin: 10px 0 0 0;
+}
+/* line 39, ../scss/_productlist.scss */
+.productlist .search-section .search .search-box {
+  height: 26px;
+  margin: -7px 0 0 44px;
+}
+/* line 43, ../scss/_productlist.scss */
+.productlist .search-section .search .go-button {
+  height: 26px;
+  line-height: 0px;
+  margin: -7px 0 0 0;
+  background-color: #0073b0;
+  color: white;
+  border: none;
+}
+/* line 52, ../scss/_productlist.scss */
+.productlist .search-section .promptMsg {
+  font-size: 13px;
+}
+/* line 54, ../scss/_productlist.scss */
+.productlist .search-section .promptMsg span {
+  color: red;
+  font-weight: bold;
+}
+/* line 60, ../scss/_productlist.scss */
+.productlist .selected-products {
+  margin: 30px 0px 6px 0px;
+}
+/* line 63, ../scss/_productlist.scss */
+.productlist .download-button {
+  margin-top: 14px;
+  background: #0073b0 url("../images/download-icon.png") no-repeat 0px;
+  padding-left: 22px;
+  color: white;
+}
+/* line 69, ../scss/_productlist.scss */
+.productlist .button-wrapper {
+  margin: 20px 0 20px 0;
+  text-align: center;
+}
+/* line 72, ../scss/_productlist.scss */
+.productlist .button-wrapper #productsFormSubmit {
+  background-color: #0073b0;
+}
+/* line 74, ../scss/_productlist.scss */
+.productlist .button-wrapper #productsFormSubmit span {
+  font-size: 15px;
+  padding: 6px;
+  color: white;
+}
+/* line 81, ../scss/_productlist.scss */
+.productlist .pages-per-page {
+  height: 26px;
+  line-height: 0px;
+  color: white;
+  background: #0073b0;
+}
+/* line 87, ../scss/_productlist.scss */
+.productlist .pages-menu {
+  min-width: 0px;
+}
+/* line 90, ../scss/_productlist.scss */
+.productlist ::-webkit-scrollbar {
+  width: 15px;
+}
+/* line 93, ../scss/_productlist.scss */
+.productlist ::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+/* line 97, ../scss/_productlist.scss */
+.productlist ::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+  background-color: #0073b0;
+  height: 50px;
+}
+/* line 105, ../scss/_productlist.scss */
+.productlist .list-view .fixed-table-container input[type="checkbox"] {
+  margin: 5px auto !important;
+}
+/* line 108, ../scss/_productlist.scss */
+.productlist .list-view .trash {
+  padding-bottom: 4px;
+}
+/* line 112, ../scss/_productlist.scss */
+.productlist ::-webkit-input-placeholder {
+  color: #DCDCDC;
+}
+/* line 115, ../scss/_productlist.scss */
+.productlist :-moz-placeholder {
+  color: #DCDCDC;
+}
+/* line 118, ../scss/_productlist.scss */
+.productlist ::-moz-placeholder {
+  color: #DCDCDC;
+}
+/* line 121, ../scss/_productlist.scss */
+.productlist :-ms-input-placeholder {
+  color: #DCDCDC;
+}
+
+/* line 128, ../scss/_productlist.scss */
+#selectingAllTxt label a {
+  text-decoration: underline;
+  cursor: pointer;
+}
+/* line 131, ../scss/_productlist.scss */
+#selectingAllTxt label a label {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@font-face {
+  font-family: "OpenSans-Regular";
+  src: url("fonts/OpenSans-Regular.ttf");
+}
+/* line 5, ../scss/_modal.scss */
+.retrival-overlay,
+.limitExceed-overlay,
+.update-overlay,
+.selectionmsg-overlay,
+.success-overlay,
+.configLoad-overlay,
+.configUpdate-overlay,
+.previewErrormsg-overlay,
+.submissionSuccess-overlay,
+.selectAll-overlay {
+  top: 200px;
+}
+
+/* line 18, ../scss/_modal.scss */
+.retrival-overlay > .modal-dialog,
+.limitExceed-overlay > .modal-dialog,
+.update-overlay > .modal-dialog,
+.selectionmsg-overlay > .modal-dialog,
+.success-overlay > .modal-dialog,
+.configLoad-overlay > .modal-dialog,
+.configUpdate-overlay > .modal-dialog,
+.previewErrormsg-overlay > .modal-dialog,
+.submissionSuccess-overlay > .modal-dialog {
+  width: 350px;
+  border-radius: 10px;
+}
+
+/* line 31, ../scss/_modal.scss */
+.selectAll-overlay > .modal-dialog {
+  width: 400px;
+  border-radius: 10px;
+}
+
+/* line 36, ../scss/_modal.scss */
+.addtional-msg {
+  color: red;
+  font-weight: bold;
+}
+
+/* line 40, ../scss/_modal.scss */
+.preview-overlay > .modal-dialog {
+  width: auto;
+  margin: 50px 100px 0px 100px;
+}
+
+/* line 46, ../scss/_modal.scss */
+.preview-overlay .preview-section {
+  padding: 10px 20px 10px 20px;
+}
+/* line 48, ../scss/_modal.scss */
+.preview-overlay .preview-section h2 {
+  text-align: center;
+  color: #0073b0;
+}
+/* line 52, ../scss/_modal.scss */
+.preview-overlay .preview-section .list-view-header {
+  background-color: #717d89;
+}
+/* line 56, ../scss/_modal.scss */
+.preview-overlay .preview-section .previewTable thead {
+  margin-right: 32px;
+}
+/* line 58, ../scss/_modal.scss */
+.preview-overlay .preview-section .previewTable thead th {
+  color: #ffffff;
+}
+/* line 62, ../scss/_modal.scss */
+.preview-overlay .preview-section .previewTable tbody > tr:nth-of-type(odd) {
+  background-color: #e6ebef;
+}
+/* line 66, ../scss/_modal.scss */
+.preview-overlay .preview-section .pages-per-page {
+  height: 26px;
+  line-height: 0px;
+  color: white;
+  background: #0073b0;
+}
+/* line 72, ../scss/_modal.scss */
+.preview-overlay .preview-section .pages-menu {
+  min-width: 0px;
+}
+/* line 75, ../scss/_modal.scss */
+.preview-overlay .preview-section ::-webkit-scrollbar {
+  width: 15px;
+}
+/* line 78, ../scss/_modal.scss */
+.preview-overlay .preview-section ::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+/* line 82, ../scss/_modal.scss */
+.preview-overlay .preview-section ::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+  background-color: #0073b0;
+  height: 50px;
+}
+/* line 88, ../scss/_modal.scss */
+.preview-overlay .preview-section .button-wrapper {
+  text-align: center;
+}
+/* line 90, ../scss/_modal.scss */
+.preview-overlay .preview-section .button-wrapper .okbtn,
+.preview-overlay .preview-section .button-wrapper .cancelbtn {
+  font-size: 15px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+/* line 100, ../scss/_modal.scss */
+.modal-content {
+  background-color: ghostwhite;
+  font-size: 14px;
+}
+/* line 103, ../scss/_modal.scss */
+.modal-content .content-section {
+  padding-top: 20px;
+}
+/* line 107, ../scss/_modal.scss */
+.modal-content .close-overlay {
+  float: right;
+  margin: 2px;
+  cursor: pointer;
+}
+/* line 113, ../scss/_modal.scss */
+.modal-content .okbtn {
+  background-color: #0073b0;
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+}
+/* line 119, ../scss/_modal.scss */
+.modal-content .cancelbtn {
+  background-color: #d6dde3;
+  color: black;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+/* line 1, ../scss/_versions.scss */
+.versionslist {
+  background-color: white;
+  padding: 30px 30px 0px 30px;
+  border: 1px solid #389bd0;
+}
+/* line 6, ../scss/_versions.scss */
+.versionslist .breadcrumb a:hover,
+.versionslist .breadcrumb a:link {
+  text-decoration: none;
+  cursor: default;
+}
+/* line 11, ../scss/_versions.scss */
+.versionslist .breadcrumb .activLink {
+  text-decoration: underline !important;
+  font-weight: bold;
+}
+/* line 16, ../scss/_versions.scss */
+.versionslist .grayOut {
+  background-color: lightgray !important;
+}
+/* line 19, ../scss/_versions.scss */
+.versionslist .search-section {
+  margin-top: 20px;
+}
+/* line 21, ../scss/_versions.scss */
+.versionslist .search-section .search {
+  margin: 10px 0 0 0;
+}
+/* line 23, ../scss/_versions.scss */
+.versionslist .search-section .search .search-box {
+  height: 26px;
+  margin: -7px 0 0 44px;
+}
+/* line 27, ../scss/_versions.scss */
+.versionslist .search-section .search .go-button {
+  height: 26px;
+  line-height: 0px;
+  margin: -7px 0 0 0;
+  background-color: #0073b0;
+  color: white;
+  border: none;
+}
+/* line 36, ../scss/_versions.scss */
+.versionslist .search-section .promptMsg {
+  font-size: 13px;
+}
+/* line 38, ../scss/_versions.scss */
+.versionslist .search-section .promptMsg span {
+  color: red;
+  font-weight: bold;
+}
+/* line 45, ../scss/_versions.scss */
+.versionslist .list-view .fixed-table-container input[type="checkbox"] {
+  margin: 5px auto !important;
+}
+/* line 48, ../scss/_versions.scss */
+.versionslist .list-view .trash {
+  padding-bottom: 4px;
+}
+/* line 52, ../scss/_versions.scss */
+.versionslist .list-view-header {
+  background-color: #717d89;
+}
+/* line 55, ../scss/_versions.scss */
+.versionslist .selected-products {
+  margin: 30px 0px 6px 0px;
+}
+/* line 58, ../scss/_versions.scss */
+.versionslist .download-button {
+  margin-top: 14px;
+  background: #0073b0 url("../images/download-icon.png") no-repeat 0px;
+  padding-left: 22px;
+  color: white;
+}
+/* line 64, ../scss/_versions.scss */
+.versionslist .button-wrapper {
+  margin: 20px 0 20px 0;
+  text-align: center;
+}
+/* line 67, ../scss/_versions.scss */
+.versionslist .button-wrapper .previous {
+  background: lightgray none repeat scroll 0 0;
+  color: black;
+  font-size: 15px;
+  margin-right: 20px;
+  padding: 6px;
+}
+/* line 74, ../scss/_versions.scss */
+.versionslist .button-wrapper #productsFormSubmit {
+  background-color: #0073b0;
+  font-size: 15px;
+  color: white;
+}
+/* line 83, ../scss/_versions.scss */
+.versionslist .ProductsAvailability thead th,
+.versionslist .SelectedProducts thead th {
+  color: #ffffff;
+  font-size: 14px;
+}
+/* line 88, ../scss/_versions.scss */
+.versionslist .ProductsAvailability tbody > tr,
+.versionslist .SelectedProducts tbody > tr {
+  font-size: 14px;
+}
+/* line 91, ../scss/_versions.scss */
+.versionslist .ProductsAvailability tbody > tr:nth-of-type(odd),
+.versionslist .SelectedProducts tbody > tr:nth-of-type(odd) {
+  background-color: #e6ebef;
+}
+/* line 95, ../scss/_versions.scss */
+.versionslist .pages-per-page {
+  height: 26px;
+  line-height: 0px;
+  color: white;
+  background: #0073b0;
+}
+/* line 101, ../scss/_versions.scss */
+.versionslist .pages-menu {
+  min-width: 0px;
+}
+/* line 104, ../scss/_versions.scss */
+.versionslist ::-webkit-scrollbar {
+  width: 15px;
+}
+/* line 107, ../scss/_versions.scss */
+.versionslist ::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+/* line 111, ../scss/_versions.scss */
+.versionslist ::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+  background-color: #0073b0;
+  height: 50px;
+}
+/* line 117, ../scss/_versions.scss */
+.versionslist ::-webkit-input-placeholder {
+  color: #DCDCDC;
+}
+/* line 120, ../scss/_versions.scss */
+.versionslist :-moz-placeholder {
+  color: #DCDCDC;
+}
+/* line 123, ../scss/_versions.scss */
+.versionslist ::-moz-placeholder {
+  color: #DCDCDC;
+}
+/* line 126, ../scss/_versions.scss */
+.versionslist :-ms-input-placeholder {
+  color: #DCDCDC;
+}
+
+@font-face {
+  font-family: "OpenSans-Regular";
+  src: url("fonts/OpenSans-Regular.ttf");
+}
+/* line 5, ../scss/_configuration.scss */
+#appSection {
+  margin-top: 0px;
+}
+
+/* line 8, ../scss/_configuration.scss */
+.configuration {
+  font-size: 13px;
+  margin: 30px 10px;
+}
+/* line 11, ../scss/_configuration.scss */
+.configuration .refresh {
+  background-color: #0073b0;
+  color: white;
+  float: right;
+}
+/* line 16, ../scss/_configuration.scss */
+.configuration .extractionNote {
+  margin-bottom: 10px;
+}
+/* line 19, ../scss/_configuration.scss */
+.configuration .errorMsg {
+  color: red;
+}
+/* line 22, ../scss/_configuration.scss */
+.configuration .configurationList {
+  font-size: 15px;
+}
+/* line 24, ../scss/_configuration.scss */
+.configuration .configurationList thead {
+  margin-right: 32px;
+}
+/* line 26, ../scss/_configuration.scss */
+.configuration .configurationList thead th {
+  color: #ffffff;
+}
+/* line 30, ../scss/_configuration.scss */
+.configuration .configurationList tbody > tr:nth-of-type(odd) {
+  background-color: #e6ebef;
+}
+/* line 34, ../scss/_configuration.scss */
+.configuration .list-view-header {
+  background-color: #717d89;
+}
+/* line 37, ../scss/_configuration.scss */
+.configuration .list-view {
+  margin-right: 32px;
+}
+/* line 41, ../scss/_configuration.scss */
+.configuration .selectItem button {
+  color: white;
+  background-color: #0073b0;
+}
+/* line 46, ../scss/_configuration.scss */
+.configuration .pages-per-page {
+  height: 26px;
+  line-height: 0px;
+  color: white;
+  background: #0073b0;
+}
+/* line 52, ../scss/_configuration.scss */
+.configuration .pages-menu {
+  min-width: 0px;
+}
+/* line 55, ../scss/_configuration.scss */
+.configuration ::-webkit-scrollbar {
+  width: 15px;
+}
+/* line 58, ../scss/_configuration.scss */
+.configuration ::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+/* line 62, ../scss/_configuration.scss */
+.configuration ::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+  background-color: #0073b0;
+  height: 50px;
+}
+/* line 68, ../scss/_configuration.scss */
+.configuration .panel-open > .panel-heading {
+  color: white;
+  background-color: #0073b0;
+}
+/* line 71, ../scss/_configuration.scss */
+.configuration .panel-open > .panel-heading span {
+  font-weight: bold;
+}
+/* line 75, ../scss/_configuration.scss */
+.configuration .panel-heading {
+  color: black;
+  background-color: #F2F6F8;
+}
+/* line 78, ../scss/_configuration.scss */
+.configuration .panel-heading span {
+  font-size: 14px;
+  font-weight: bold;
+}
+/* line 82, ../scss/_configuration.scss */
+.configuration .panel-heading a {
+  outline: 0;
+  text-decoration: none;
+}
+/* line 89, ../scss/_configuration.scss */
+.configuration .service-configuration-section input[type=text],
+.configuration .service-configuration-section input[type=url],
+.configuration .service-configuration-section input[type=number],
+.configuration .service-configuration-section select {
+  width: 70%;
+}
+/* line 95, ../scss/_configuration.scss */
+.configuration .service-configuration-section .proxy-input {
+  width: 100% !important;
+}
+/* line 98, ../scss/_configuration.scss */
+.configuration .service-configuration-section .port-label {
+  padding-right: 0px;
+}
+/* line 101, ../scss/_configuration.scss */
+.configuration .service-configuration-section .port-input {
+  padding: 0px;
+}
+/* line 103, ../scss/_configuration.scss */
+.configuration .service-configuration-section .port-input input[type=text] {
+  width: 63%;
+}
+/* line 107, ../scss/_configuration.scss */
+.configuration .service-configuration-section .checkbox {
+  margin-top: 20px !important;
+  margin-bottom: 20px !important;
+}
+/* line 110, ../scss/_configuration.scss */
+.configuration .service-configuration-section .checkbox label {
+  font-weight: bold;
+}
+/* line 114, ../scss/_configuration.scss */
+.configuration .service-configuration-section #licenseKey {
+  display: inline;
+  width: 64% !important;
+}
+/* line 118, ../scss/_configuration.scss */
+.configuration .service-configuration-section #serviceConfigSubmit {
+  color: white;
+  background-color: #0073b0;
+  font-weight: bold;
+}
+/* line 123, ../scss/_configuration.scss */
+.configuration .service-configuration-section .disable {
+  background-color: lightgray !important;
+}
+/* line 129, ../scss/_configuration.scss */
+.configuration .badDates .dates button {
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+/* line 134, ../scss/_configuration.scss */
+.configuration .badDates .minDtErr, .configuration .badDates .maxDtErr {
+  display: none;
+  color: red;
+}
+/* line 138, ../scss/_configuration.scss */
+.configuration .badDates .badDatesSubmit {
+  color: white;
+  background-color: #0073b0;
+  font-weight: bold;
+}
+/* line 145, ../scss/_configuration.scss */
+.configuration .emailConfig .emailSubmit {
+  color: white;
+  background-color: #0073b0;
+  font-weight: bold;
+}
+/* line 152, ../scss/_configuration.scss */
+.configuration #importToTroux .checkbox {
+  margin-top: 20px !important;
+  margin-bottom: 20px !important;
+}
+/* line 155, ../scss/_configuration.scss */
+.configuration #importToTroux .checkbox label {
+  font-weight: bold;
+}
+/* line 159, ../scss/_configuration.scss */
+.configuration #importToTroux .importSubmit {
+  color: white;
+  background-color: #0073b0;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "OpenSans-Regular";
+  src: url("fonts/OpenSans-Regular.ttf");
+}
+/* line 5, ../scss/_reqInfo.scss */
+.viewRequestInfo {
+  margin: 40px 6px 0px 6px;
+}
+/* line 7, ../scss/_reqInfo.scss */
+.viewRequestInfo .list-view-header {
+  background-color: #717d89;
+}
+/* line 10, ../scss/_reqInfo.scss */
+.viewRequestInfo .reqInfo {
+  font-size: 15px;
+}
+/* line 12, ../scss/_reqInfo.scss */
+.viewRequestInfo .reqInfo thead {
+  margin-right: 32px;
+}
+/* line 14, ../scss/_reqInfo.scss */
+.viewRequestInfo .reqInfo thead th {
+  color: #ffffff;
+}
+/* line 18, ../scss/_reqInfo.scss */
+.viewRequestInfo .reqInfo tbody > tr:nth-of-type(odd) {
+  background-color: #e6ebef;
+}
+/* line 22, ../scss/_reqInfo.scss */
+.viewRequestInfo .pages-per-page {
+  height: 26px;
+  line-height: 0px;
+  color: white;
+  background: #0073b0;
+}
+/* line 28, ../scss/_reqInfo.scss */
+.viewRequestInfo .pages-menu {
+  min-width: 0px;
+}
+/* line 31, ../scss/_reqInfo.scss */
+.viewRequestInfo ::-webkit-scrollbar {
+  width: 15px;
+}
+/* line 34, ../scss/_reqInfo.scss */
+.viewRequestInfo ::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+/* line 38, ../scss/_reqInfo.scss */
+.viewRequestInfo ::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+  background-color: #0073b0;
+  height: 50px;
+}

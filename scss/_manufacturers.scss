@@ -1,0 +1,58 @@
+@font-face {
+    font-family: "OpenSans-Regular" ;
+    src: url("fonts/OpenSans-Regular.ttf");
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    background: #f2f6f8  url("../images/bg.jpg") repeat-x;
+    font-family: "OpenSans-Regular" ;
+}
+
+section {
+    min-height: 100% !important;
+    #appSection {
+            .manufacturer-section {
+		   background-color: white;
+            margin-top: 0px;
+            padding:30px 0px 15px 0px;
+            border: 1px solid #389bd0;
+            .manufacturer-list{
+                margin-left: 84px;
+            }
+            .button-wrapper {
+                text-align: center;
+                margin-left:-28px;
+                #manufacturerFormSubmit {
+                    background-color: #0073b0;
+                    span {
+                        font-size: 15px;
+                        padding: 6px;
+                        color:white;
+                        border:none;
+                    }
+                }
+            }
+            ::-webkit-input-placeholder {
+                color: #DCDCDC;
+            }
+            :-moz-placeholder {
+                color: #DCDCDC;
+            }
+            ::-moz-placeholder {
+                color: #DCDCDC;
+            }
+            :-ms-input-placeholder {
+                color: #DCDCDC;
+            }
+        }
+    }
+}

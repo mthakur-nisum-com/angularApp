@@ -1,0 +1,187 @@
+<title>Troux-B|DNA Integration-Configuration</title>
+<div class="configuration">
+    <uib-accordion close-others="true">
+        <uib-accordion-group is-open="status.isSecondOpen">
+            <uib-accordion-heading>
+                BDNA Technopedia Connection <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.isSecondOpen, 'glyphicon-chevron-right': !status.isSecondOpen}"></i>
+            </uib-accordion-heading>
+            <div class="col-lg-10 col-offset-2 service-configuration-section">
+                <form name="serviceConfigForm" id="serviceConfigurtionForm" ng-submit="configCtrl.saveServiceConfig()" novalidate>
+                    <div class="row form-group">
+                        <label for="inputUrl" class="control-label col-xs-2">Rest URI</label>
+                        <div class="col-xs-10">
+                            <input type="url" name="restUri" ng-model="serviceConfigurationAttrs.REST_URL" class="form-control" id="inputUrl" required>
+                            <span style="color:red" ng-show="serviceConfigForm.restUri.$dirty && serviceConfigForm.restUri.$invalid">
+                            <span ng-show="serviceConfigForm.restUri.$error.required">Required</span>
+                            <span ng-show="serviceConfigForm.restUri.$error.url">Not a valid url!</span></span>
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <label for="maxRecords" class="control-label col-xs-2">Max records</label>
+                        <div class="col-xs-10">
+                            <select name="maxrecords" string-to-number class="form-control" ng-model="serviceConfigurationAttrs.MAX_RECORDS" ng-options="item for item in MAX_RECORDS" required>
+                                <option value="">Select</option>
+                            </select>
+                            <span style="color:red" ng-show="serviceConfigForm.maxrecords.$dirty && serviceConfigForm.maxrecords.$invalid">                        
+                            <span ng-show="serviceConfigForm.maxrecords.$error.required">Required</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <label for="maxRecords" class="control-label col-xs-2">Retry Limits</label>
+                        <div class="col-xs-10">
+                            <select name="retryLimits" string-to-number class="form-control" ng-model="serviceConfigurationAttrs.RETRY_LIMIT" ng-options="item for item in RETRY_LIMIT" required>
+                                <option value="">Select</ption>
+                            </select>
+                            <span style="color:red" ng-show="serviceConfigForm.retryLimits.$dirty 
+                            && serviceConfigForm.retryLimits.$invalid">                        
+                            <span ng-show="serviceConfigForm.retryLimits.$error.required">Required</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <label for="proxyServer" class="control-label col-xs-2">Proxy Server</label>
+                        <div class="col-xs-4">
+                            <input type="text"  name="proxyServer" class="form-control proxy-input" id="proxyServer" ng-model="serviceConfigurationAttrs.PROXY_SERVER"  />
+                           <span style="color:red" ng-show="proxyPattern" id="proxyPattern">Not a valid Proxy Server</span>
+                           <span style="color:red" ng-show="proxyMaxlength" id="proxyMaxlength">maximum 100 characters are allowed</span>
+                        </div>
+                        <label for="port" class="control-label col-xs-1 port-label">Port</label>
+                        <div class="col-xs-3 port-input">
+                            <input type="text" class="form-control" name="port" ng-model="serviceConfigurationAttrs.PROXY_PORT"  />
+                           <span style="color:red" id="portPattrn" ng-show="{{portPattrn}}">Not a valid port!</span>
+                            <span  style="color:red" id="portMinlength" ng-show="{{portMinlength}}">minimum 2 numbers are required</span>
+                            <span  style="color:red" id="portMaxlength" ng-show="{{portMaxlength}}">maximum 4 numbers are allowed</span>
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <label for="licenseKey" class="control-label col-xs-2">API License key</label>
+                        <div class="col-xs-10">
+                            <label>apiKey</label>
+                            <input type="text" ng-pattern="/^((?!((a|A)(p|P)(i|I)(k|K)(e|E)(y|Y))).)*$/" ng-model="serviceConfigurationAttrs.API_KEY" name="licencekey" class="form-control" id="licenseKey" required />
+                            <span style="color:red" ng-show="serviceConfigForm.licencekey.$dirty && serviceConfigForm.licencekey.$invalid">
+                            <span ng-show="serviceConfigForm.licencekey.$error.required">Required</span>
+							 <span ng-show="serviceConfigForm.licencekey.$error.pattern">"apikey" need not to be entered.</span>
+                            </span>
+                        </div>
+                    </div>
+
+                      <!--   <div class="row form-group">
+                        <label for="email" class="control-label col-xs-2">Email</label>
+                        <div class="col-xs-10">
+                            <input type="text" ng-model="serviceConfigurationAttrs.EMAIL" name="email" ng-pattern="/^[a-z]+[a-z0-9._]+@[a-z]+\.[a-z.]{2,5}$/" class="form-control" required/>
+                            <div style="color:red" ng-show="serviceConfigForm.email.$dirty && serviceConfigForm.email.$invalid">
+                                <span ng-show="serviceConfigForm.email.$error.required">*Required</span>
+                                <span ng-show="serviceConfigForm.email.$error.pattern">*Enter Valid Email address</span>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <!-- <div class="checkbox">
+                        <label>
+                            <input type="checkbox" ng-model="serviceConfigurationAttrs.PUSH_MNF_INFO_TO_TROUX" value="{{serviceConfigurationAttrs.PUSH_MNF_INFO_TO_TROUX}}">Import Manufacturers to Troux (External Organizations) </label>
+                    </div>
+                    <div class="checkbox ">
+                        <label>
+                            <input type="checkbox" ng-model="serviceConfigurationAttrs.PUSH_CAT_INFO_TO_TROUX" value="{{serviceConfigurationAttrs.PUSH_CAT_INFO_TO_TROUX}}">Import Categories to Troux (Standards Categories)</label>
+                    </div>
+                    <div class="checkbox ">
+                        <label>
+                            <input type="checkbox" ng-model="serviceConfigurationAttrs.PUSH_PRODUCTS_TO_TROUX" value="{{serviceConfigurationAttrs.PUSH_PRODUCTS_TO_TROUX}}">Import Products to Troux (Software Products/Hardware Products) </label>
+                    </div> -->
+                    <div class="form-group">
+                        <button type="submit" id="serviceConfigSubmit" ng-disabled="!serviceConfigForm.$valid" ng-class="{disable:!serviceConfigForm.$valid}" class="btn submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </uib-accordion-group>
+        <uib-accordion-group is-open="status.isThirdOpen">
+            <uib-accordion-heading>
+                Valid Date Range<i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.isFourthOpen, 'glyphicon-chevron-right': !status.isFourthOpen}"></i>
+            </uib-accordion-heading>
+            <div class="col-lg-12 badDates">
+                <div>
+                    Use these settings to filter out the phases you do not want to be included in the lifecycles, based on the beginning date of the phase. Any phase that begins before the "Minimum Date" will be ignored, as will any date that begins after the "Maximum Date".<br/><br/>
+                </div>  
+                <form role="form" ng-submit="configCtrl.submitBaddates()">
+                    <div class="row form-group">
+                        <label for="MinDate" class="control-label col-xs-2">Min Date</label>
+                        <div class="col-xs-4">
+                            <p class="input-group dates">
+                                <input type="text" class="form-control" placeholder="yyyy-mm-dd" uib-datepicker-popup="{{format}}" init-date="new Date(2015-04-05)" min-date="configs.minimumDate" max-date="configs.maximumDate" is-open="status.calenderOne" show-button-bar="false" year-range=""ng-required="true" />
+                                <span class="input-group-btn">
+                                    <button type="button" class="btn btn-default" ng-click="openCalenderOne($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+                                </span>
+                            </p>
+                            <div class="minDtErr">* Please enter the valid date.</div>
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <label for="MaxDate" class="control-label col-xs-2">Max Date</label>
+                        <div class="col-xs-4">
+                            <p class="input-group dates">
+                                <input type="text" class="form-control" placeholder="yyyy-mm-dd"uib-datepicker-popup="{{format}}" ng-model="configs.maxDate" min-date="configs.minimumDate" max-date="configs.maximumDate" is-open="status.calenderTwo" ng-required="true" show-button-bar="false" />
+                                <span class="input-group-btn">
+                                    <button type="button" class="btn btn-default" ng-click="openCalenderTwo($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+                                </span>
+                            </p>
+                            <div class="maxDtErr">* Please enter the valid date.</div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-default badDatesSubmit">Submit</button>
+                </form>
+            </div>
+        </uib-accordion-group>
+      <uib-accordion-group is-open="status.isFourthOpen">
+            <uib-accordion-heading>
+                Troux Import Options<i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.isFourthOpen, 'glyphicon-chevron-right': !status.isFourthOpen}"></i>
+            </uib-accordion-heading>
+            <form name="importToTrouxForm" id="importToTroux" ng-submit="configCtrl.saveImportOptions()">
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" ng-model="importAttrs.PUSH_MNF_INFO_TO_TROUX" value="{{importAttrs.PUSH_MNF_INFO_TO_TROUX}}"> Manufacturers (External Organizations) </label>
+                </div>
+                <div class="checkbox ">
+                    <label>
+                        <input type="checkbox" ng-model="importAttrs.PUSH_CAT_INFO_TO_TROUX" value="{{importAttrs.PUSH_CAT_INFO_TO_TROUX}}"> Categories (Standards Categories)</label>
+                </div>
+                <div class="checkbox ">
+                    <label>
+                        <input type="checkbox" ng-model="importAttrs.PUSH_PRODUCTS_TO_TROUX" value="{{importAttrs.PUSH_PRODUCTS_TO_TROUX}}"> Products (Software Products/Hardware Products) </label>
+                </div>
+                <button type="submit" class="btn btn-default importSubmit">Submit</button>
+            </form>
+        </uib-accordion-group>
+        <uib-accordion-group is-open="status.isFirstOpen">
+            <uib-accordion-heading>
+                BDNA Technopedia Cache Refresh<i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.isFirstOpen, 'glyphicon-chevron-right': !status.isFirstOpen}"></i>
+            </uib-accordion-heading>
+            <div class="row selectItem">
+                <div class="col-lg-12 extractionNote">
+                    Portfolio data is loaded from BDNA Technopedia in order to allow users to better search and filter which lifecycle information should be loaded into Troux. This information is periodically updated, to ensure that users are working from the latest set of data. The table below shows a history of these jobs, with the resulting status.
+                    <br/>
+                    <br/> To manually run a data synchronization job from BDNA Technopedia, use the drop-down box below to select the type of information you would like to update. Then click the "Run" button.
+                </div>
+                <div class="col-lg-6">
+                    <form role="form" class="form-inline" ng-submit="configCtrl.fetchSelectedData()">
+                        <select class="form-control selectProcess" ng-model="selectedItem.itemValue" ng-options="item for item in selectItems">
+                            <option value="">Select Data Type to Upload Manually</option>
+                        </select>
+                        <button type="submit" class="btn btn-default">Run</button>
+                </div>
+                </form>
+                <div class="col-lg-6">
+                    <button type="button" ng-click="fetchData()" class="btn btn-default refresh"><i class="glyphicon glyphicon-refresh icon-refresh"></i></button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 errorMsg"></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <table id="ConfigurationStatus" bs-table-control="ConfigurationStatus"></table>
+                </div>
+            </div>
+        </uib-accordion-group>
+    </uib-accordion>
+</div>

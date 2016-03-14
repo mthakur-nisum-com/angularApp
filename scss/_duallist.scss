@@ -1,0 +1,90 @@
+#dual-list-box {
+    small {
+        color: grey;
+        opacity: 0.4;
+    }
+    .filter {
+        width: 390px;
+        margin-bottom: 10px;
+        padding: 0px 0px 0px 20px;
+       
+    }
+    .unselectedPromptMsg,
+    .selectedPromptMsg {
+        display: none;
+        color: red;
+        margin-bottom: 8px;
+    }
+    .filterimg {
+        background: url("../images/loader.gif") no-repeat 260px;
+    }
+	 .btn.disabled, .btn[disabled], fieldset[disabled] .btn{
+		opacity:1;
+		cursor:pointer;
+		background-color: #a0a9b1;
+    }
+    .add-del-btns{
+         width:13.333%
+    }
+    select {
+        word-wrap: break-word;
+        width: 390px;
+        height: 300px;
+        background-color: ghostwhite;
+        option {
+            padding: 0px 0px 10px 10px;
+         
+        }
+    }
+    select option:hover,
+    select option:focus,
+    select option:active,
+    select option:checked {
+        background: linear-gradient(#0073b0, #0073b0);
+        color: white;
+    }
+    @media all and (-ms-high-contrast: none),
+    (-ms-high-contrast: active) {
+        select option:hover,
+        select option:focus,
+        select option:active,
+        select option:checked {
+            background: #0073b0;
+            color: white;
+        }
+    }
+    .center-block {
+        margin-top: 180px;
+        button {
+            background-color: #a0a9b1;
+            margin-bottom: 10px;
+            width: 55px;
+            border:none;
+        }
+        .stl,
+        .str {
+            color: white;
+        }
+    }
+    ::-webkit-scrollbar {
+        width: 15px
+    }
+    ::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+    }
+    ::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+        background-color: #0073b0;
+        height: 50px;
+    }
+    scrollbar-base-color: #0073b0;
+    scrollbar-base-color: #0073b0;
+    scrollbar-3dlight-color: #C0C0C0;
+    scrollbar-highlight-color:#0073b0;
+    scrollbar-track-color: #EBEBEB;
+    scrollbar-arrow-color: black;
+    scrollbar-shadow-color: #0073b0;
+    scrollbar-dark-shadow-color: #C0C0C0;
+}

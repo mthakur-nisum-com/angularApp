@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="shortcut icon" href="favicon.ico" />
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Help</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css" />
+    <link href="css/help.css" rel="stylesheet">
+</head>
+
+<body>
+<header>
+    <nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand troux-logo" href="#"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">          
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="index.html" class="configure">Home</a></li>
+      <li><a href="reqInfo.html" class="configure">History</a></li>   
+      <li><a href="config.html" class="configure">Configuration</a></li>
+       <li><a href="help.html" class="configure">Help</a></li>
+  
+    
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="welcom-text"><div class="container">Welcome To BDNA Technology Catalog Integration</div></div>
+</header>
+<section>
+    <div id="wrapper" >
+        <div id="sidebar-wrapper" style="position:absolute;">
+            <ul class="sidebar-nav" >
+                <li id="firstLink">
+                    <a href="#Overview">Overview</a>
+                </li>
+                <li>
+                    <a href="#Manufacturers">Manufacturers</a>
+                </li>
+                <li>
+                    <a href="#Categories">Categories</a>
+                </li>
+                <li>
+                    <a href="#Products">Products</a>
+                </li>
+                <li>
+                    <a href="#Versions">Versions/Models</a>
+                </li>
+                <li>
+                    <a href="#Configuration">Configuration</a>
+                </li>
+                <li>
+                    <a href="#History">History</a>
+                </li>
+            </ul>
+        </div>
+        <div id="page-content-wrapper" style="position:relative;">
+            <div id="Overview" class="toggle">It is a web based product that can manage Troux customers extract the technology portfolio data from BDNA technopedia.</div>
+
+            <div id="Manufacturers" class="toggle manufacturers" style="display:none">
+            <ul>
+            <li>Manufacturers iformation from application cache is fetched and displayed in the available table.<br><img alt="" id="manfactureImage" src="images/manufacturers.png" style="width:495px;"></li>
+           
+            <li>Then manufacturer data can be selected and can be transferred to the selected tab.</li>
+            <li>Selection of manufacturers is a multi select, not more than <b>100</b> can be selected and moved to the selected table by clicking on the '>'  button</li>
+            <li>If more than 100 records are selected then the user is displayed with error message<br><img alt="" src="images/more than 100 error message.png"></li>
+            <li>If any manufacturer is not wanted, then it can be removed from the selected table by selecting the Manufacturers and click on the '<' button.</li>
+            <li>The final selected manufacturers are submitted by clicking on the Save button.</li>
+            <li>User will be navigated to category page on clicking on the save button.</li>
+            </ul>
+            
+            </div>
+            <div id="Categories" class="toggle" style="display:none">
+            	<ul>
+            		<li>Category information is fetched from the application cache. Specific categories can be selected from the categories table and can be moved to the selected table<br/><img style="width:495px;"  src="images/category page.png"></li> 
+<li>Select the specific categories from the available categories and then click on '>' button.</li>
+<li>Selected categories can be removed from the selected table by selecting and clicking on '<' button.</li>
+<li>Final selected categories can be submitted by clicking on the save button.</li>
+<li>Search box is provided for the user on the Available table and Selected table<br><img style="width:495px;" src="images/filter box.png"> </li>
+<li>User must able to give minium 3 characters in search box <br><img alt="" src="images/min3.png"></li>
+            	</ul>
+            </div>
+            
+            
+            <div id="Products" class="toggle" style="display:none">Products
+            <ul>
+            <li> products/ Hardware models information is fetched from the application cache. Specific Software products/ Hardware models can be selected from the Software products/ Hardware models table and can be moved to the selected table.</li>
+<li>Radio button is provided to switch between software products and hardware model.<br><img alt=""  src="images/search.png"></li>
+<li>Software products/ Hardware models which are available are shown in the available table.<br><img alt="" style="width:495px;" src="images/available table prod.png"></li>
+<li>Select all option is provided to select all the software products/hardware models. Individual selection of the software products/hardware models is also available.<br><img alt="" src="images/select all.png"></li>
+<li>The selected software products/hardware models are moved to the selected table by clicking on the 'Add selected' button.<br><img alt="" src="images/add selected button.png"></li>
+<li>Specific software products/hardware models can be searched with the search box.<br><img alt="" style="width:495px;" src="images/specific.png"></li>
+<li>No of records per page can be selected from the available options of 10,25,50.<br><img alt="" src="images/no of records.png"></li>
+<li>Pagination is available for the selected and available tables. On clicking > button, navigated to the next page, and >> button to go to the last page. Similarly if < button is clicked, you will be navigated to the previous page and << button to the first page.<br><img alt="" src="images/pagination.png"></li>
+            
+            
+            </ul>
+            </div>
+            
+            
+            
+            <div id="Versions" class="toggle" style="display:none">Versions
+            <ul>
+            <li>Software product versions, which are in the available table are based on the software products which are selected in the software product tab<br><img alt="" style="width:495px;" src="images/available table prod.png"></li>
+<li>Software product versions are displayed in available table, can be selected and moved to the selected table by selecting and clicking on 'Add selected' button.<br><img alt="" src="images/add selected button.png"></li>
+<li>Software product versions can be deleted from the selected table by clicking on the delete icon.<br><img alt="" src="images/deleteicon.png"></li>
+<li>No of rows can be adjusted by the given options of 10, 25, 50.<br><img alt="" src="images/no of records.png"></li>
+<li>Pagination is available, making it easy to navigate through the records.<br><img alt="" src="images/pagination.png"></li>
+<li>The Software product versions can be submitted by clicking on the submit button.</li>
+            
+            </ul>          
+            </div>
+            
+            <div id="Configuration" class="toggle" style="display:none">Configuration
+          <ul>
+          <li>BDNA Technopedia Connection: Parameters that will be used to connect to the technopedia services<br><img alt=""  style="width:495px;" src="images/technopedia connection.png"></li>
+          <li>Valid Date Range: Use these settings to filter out the phases you do not want to be included in the lifecycles, based on the beginning date of the phase. Any phase that begins before the "Minimum Date" will be ignored, as will any date that begins after the "Maximum Date".<br><img alt="" style="width:495px;" src="images/valid date range.png"></li>
+          <li>Troux Import Options: User can choose the import options from <ul><li>Manufacturers</li><li>Categories</li><li>Products</li></ul><br><img alt="" src="images/troux import.png"></li>
+          <li>BDNA Technopedia Cache Refresh: Portfolio data is loaded from BDNA Technopedia in order to allow users to better search and filter which lifecycle information should be loaded into Troux. This information is periodically updated, to ensure that users are working from the latest set of data. The table below shows a history of these jobs, with the resulting status. 
+
+To manually run a data synchronization job from BDNA Technopedia, use the drop-down box below to select the type of information you would like to update. Then click the "Run" button.<br><img alt="" style="width:495px;" src="images/cache refresh.png"></li>
+          </ul>
+          </div>
+            
+            <div id="History" class="toggle" style="display:none">History
+ <ul>
+ <li>User is provided with the list of all saved sessions. The results of these sessions may have been sent to the Troux server for upload, as denoted by the status "In Progress" or "Completed". Or these sessions could simply be saved for future use, as denoted by the status "Open".<br><img alt="" width="style:495px;" src="images/history.png"></li>
+ <li>View is provided for the user to go the particular request<br><img alt="" src="images/view.png"> </li>
+ <li>No of rows can be adjusted by the given options of 10, 25, 50.<br><img alt="" src="images/no of records.png"></li>
+<li>Pagination is available, making it easy to navigate through the records.<br><img alt="" src="images/pagination.png"></li>
+ </ul>
+            
+            
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <footer>
+            <div class="footer-text">
+            Copyrights @ BDNA Technology Catalog Integration.
+        </div>
+
+    </footer>
+    <script src="js/lib/jquery.js"></script>
+    <script src="js/lib/bootstrap.min.js"></script>
+    <script>
+    $(".sidebar-nav li a").click(function(e) {
+        e.preventDefault();
+        $(".toggle").hide();
+        var toShow = $(this).attr('href');
+        $(toShow).show();
+    });
+
+    $("#firstLink").click(function(e) {
+        $(".subList").toggle();
+        // if($(".subList").css("display","none")){
+        //      $(".subList").css("display","block");
+        // }
+        // else if($(".subList").css("display","block")){
+        //         $(".subList").css("display","none");
+        // }
+
+    });
+    </script>
+</body>
+
+</html>

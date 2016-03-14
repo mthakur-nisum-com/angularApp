@@ -1,0 +1,31 @@
+<title>Troux-B|DNA Integration-Categories</title>
+    <div id="breadCrumb">
+        <ul class="bread-crumb-nav nav nav-pills" role="tablist">
+            <li class="manufacturers disable">
+                <a ui-sref="root.manufacturersurl"> Manufacturers</a>
+            </li>
+            <li class="categories active">
+                <a ui-sref="root.categories"> Categories</a>
+            </li>
+            <li class="products disable">
+                <a ui-sref="root.productList"> Products/{{VersionsOrModels}}</a>
+            </li>
+        </ul>
+    </div>
+    <div class="categories-section">
+        <div class="row">
+            <div class="col-md-11 col-md-offset-1 categories-list">
+                <form name="categories-selection" id="categoriesSelectionForm" ng-submit="categoriesCtrl.save()">
+                    <category-dual-list available-items='availableCategories' selected-items='selectedCategories' , available-items-length='availableCategoriesLength' , selected-items-length='selectedCategoriesLength' , move-all-btn="moveAllBtn"></category-dual-list>
+                    <div class="row ">
+                        <div class="col-md-12 button-wrapper">
+                            <button class="btn submit" id="categoriesFormSubmit">
+                                <span>Save</span>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
